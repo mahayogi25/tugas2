@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tugas2/fragments/profile_fragment.dart';
+import 'package:tugas2/fragments/form.dart';
 import 'styles.dart';
  
 class OnboardingScreen extends StatefulWidget {
@@ -77,7 +77,7 @@ Widget build(BuildContext context) {
                         child : new RaisedButton(
                             onPressed: (){
                               Navigator.of(context).push(new MaterialPageRoute(
-                              builder: (BuildContext context) => ProfileFragment(),));
+                              builder: (BuildContext context) => FormInput(),));
                             },
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(80.0)
